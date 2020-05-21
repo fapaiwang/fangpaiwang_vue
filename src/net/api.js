@@ -21,8 +21,12 @@ netRequest.setConfig((config) => {
 export default {
   // 这里统一管理api请求
   apis: {
-    getBanner (data) {
-      return netRequest.get('/second/get_today_add', data)
-    }
+    getBanner(data) {
+      return netRequest.get('/banner/index', data)
+    },
+	getHouseDetail(data) {
+		return netRequest.post('/second/houseDetail', data)
+	}
+	
   }
 }

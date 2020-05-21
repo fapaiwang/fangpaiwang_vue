@@ -34,11 +34,18 @@ export default {
     },
 	async getHomeData() {
 		try {
-			const res = await this.$netApi.getBanner()
+			const res = await this.$netApi.getBanner({space_id:4})
 			console.log(res)
 		} catch (err) {
 			console.log(err)
 		}
+		try {
+			const ress = await this.$netApi.getHouseDetail({id:1})
+			console.log(ress)
+		} catch (err) {
+			console.log(err)
+		}
+		
 	}
   },
   onLoad () {
