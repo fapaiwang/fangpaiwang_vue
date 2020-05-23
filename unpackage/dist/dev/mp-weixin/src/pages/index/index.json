@@ -1,0 +1,6 @@
+{
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "nav-search-header": "/src/components/base/uni-navSearchHeader"
+  }
+}

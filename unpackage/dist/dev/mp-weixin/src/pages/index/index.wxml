@@ -1,0 +1,1 @@
+<nav-search-header bind:goPickCityClick="__e" bind:returnInputDate="__e" bind:goUserClick="__e" vue-id="5a0bb925-1" data-event-opts="{{[['^goPickCityClick',[['onPickCityClick']]],['^returnInputDate',[['returnDate']]],['^goUserClick',[['onUserClick']]]]}}" bind:__l="__l"></nav-search-header>

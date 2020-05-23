@@ -1,0 +1,48 @@
+{
+  "pages": [
+    "src/pages/index/index",
+    "src/pages/focus/index",
+    "src/pages/customer/customer",
+    "src/pages/mine/mine"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#666666",
+    "selectedColor": "#E02E24",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "src/pages/index/index",
+        "iconPath": "static/tab/home@2x.png",
+        "selectedIconPath": "static/tab/home-pick@2x.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "src/pages/focus/index",
+        "iconPath": "static/tab/focus@2x.png",
+        "selectedIconPath": "static/tab/focus-pick@2x.png",
+        "text": "重点推荐"
+      },
+      {
+        "pagePath": "src/pages/customer/customer",
+        "iconPath": "static/tab/customer@2x.png",
+        "selectedIconPath": "static/tab/customer-pick@2x.png",
+        "text": "客服"
+      },
+      {
+        "pagePath": "src/pages/mine/mine",
+        "iconPath": "static/tab/mine@2x.png",
+        "selectedIconPath": "static/tab/mine-pick@2x.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "usingComponents": {}
+}

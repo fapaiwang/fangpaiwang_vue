@@ -1,0 +1,56 @@
+{
+  "description": "项目配置文件。",
+  "packOptions": {
+    "ignore": []
+  },
+  "setting": {
+    "urlCheck": false
+  },
+  "compileType": "miniprogram",
+  "libVersion": "2.9.2",
+  "appid": "touristappid",
+  "projectname": "fangpai",
+  "condition": {
+    "search": {
+      "current": -1,
+      "list": []
+    },
+    "conversation": {
+      "current": -1,
+      "list": []
+    },
+    "game": {
+      "current": -1,
+      "list": []
+    },
+    "miniprogram": {
+      "current": 0,
+      "list": [
+        {
+          "name": "首页",
+          "query": "",
+          "id": 0,
+          "pathName": "src/pages/index/index"
+        },
+        {
+          "name": "重点推荐",
+          "query": "",
+          "id": 1,
+          "pathName": "src/pages/focus/index"
+        },
+        {
+          "name": "客服",
+          "query": "",
+          "id": 2,
+          "pathName": "src/pages/customer/customer"
+        },
+        {
+          "name": "我的",
+          "query": "",
+          "id": 3,
+          "pathName": "src/pages/mine/mine"
+        }
+      ]
+    }
+  }
+}

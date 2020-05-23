@@ -1,3 +1,4 @@
+
 import NetRequest from './NetRequest.js'
 
 const netRequest = new NetRequest()
@@ -14,7 +15,7 @@ netRequest.interceptors.response((response) => {
 
 // 设置默认配置
 netRequest.setConfig((config) => {
-  config.baseURL = 'http://www.fangpaiwang.com/api'
+  config.baseURL = '/h5api'
   return config
 })
 
@@ -24,6 +25,10 @@ export default {
     getBanner(data) {
       return netRequest.get('/banner/index', data)
     },
+	getHomeMenu(data) {
+		return netRequest.get('page/home_menu', data)
+	},
+	
 	getHouseDetail(data) {
 		return netRequest.post('/second/houseDetail', data)
 	}

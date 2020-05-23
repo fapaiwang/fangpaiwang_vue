@@ -7,7 +7,8 @@ class NetRequest {
   [config] = {
     baseURL: '',
     header: {
-      'content-type': 'application/json'
+		'Access-Control-Allow-Origin': '*',
+		'content-type': 'application/json'
     },
     method: 'GET',
     dataType: 'json',

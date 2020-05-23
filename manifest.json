@@ -74,5 +74,21 @@
     },
     "uniStatistics": {  
         "enable": false
-    }
+    },
+	"h5": {
+		"devServer": {
+			"disableHostCheck": true,
+			"proxy": {
+				"/h5api": {
+					// 需要被代理的后台地址
+					"target": "http://www.fangpaiwang.com/api",
+					"changeOrigin": true,
+					"secure": false,
+					"pathRewrite": {
+						"^/h5api": "/"
+					}
+				   }
+			   }
+			}
+		}
 }
