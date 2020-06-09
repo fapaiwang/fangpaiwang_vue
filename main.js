@@ -9,13 +9,13 @@ Vue.prototype.apiUrl = '/h5api';
 Vue.config.productionTip = false
 
 App.mpType = 'app'
-Vue.use(MinRouter)
+// Vue.use(MinRouter)
 Vue.use(NetRequest)
 
 
 const app = new Vue({
     ...App,
-	minRouter,
+	// minRouter,
 	netRequest
 })
 app.$mount()

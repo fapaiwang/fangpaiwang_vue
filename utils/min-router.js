@@ -132,7 +132,7 @@ MinRouter.install = function (Vue) {
 const routes = []
 const pageFiles = require.context('../src/pages', true, /\.vue$/)
 pageFiles.keys().forEach(path => {
-  const pagepath = path.replace(/^\.\/(.*)\.vue$/, 'pages/$1')
+  const pagepath = path.replace(/^\.\/(.*)\.vue$/, '/src/pages/$1')
   const pageName = path.replace(/^\.\/(.*)\/index\.vue$/, '$1')
   const pageContent = pageFiles(path).default
 

@@ -2,7 +2,7 @@
 	<view class="quickConView">
 		<view class="quickConContent">
 			<view v-for="(item,index) in quickConData" :key="index" class="quickConItem">
-				<image class="quickConItemIcon" src='../../../static/img/home/all-house@2x.png'></image>
+				<image class="quickConItemIcon" :src="getImgUrl(item.icon)"></image>
 				<text class="quickConItemText">{{item.name}}</text>
 			</view>
 		</view>
@@ -20,7 +20,9 @@
 			}
 		},
 		methods: {
-			
+			getImgUrl(icon){
+			   return `http://fangpaiwang.com/${icon}`;
+			},
 		}
 	}
 </script>
@@ -32,9 +34,9 @@
 	},
 	.quickConView .quickConContent {
 		width: 100%;
-		display: flex;		
+		display: flex;
 		flex-flow: row wrap;
-		align-items:center;	    
+		align-items:center;
 	},
 	.quickConView .quickConContent .quickConItem {
 		display: flex;
